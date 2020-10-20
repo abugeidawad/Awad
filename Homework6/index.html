@@ -47,12 +47,13 @@
         url: queryURL,
         method: "GET"
       }).then(function(response) {
+        console.log(response)
         $("#city").html(city)
         //$("#weather").html(response.weather[0].main+" "+response.weather[0].description)
-        $("#panel >#windspeed").html(response.current.wind_speed)
-        $("#panel >#temp").html(response.current.temp)
-        $("#panel >#humidity").html(response.current.humidity)
-        $("#panel >#uvindex").html(response.current.uvi)
+        $("#weather >#windspeed").html(response.current.wind_speed)
+        $("#weather >#temp").html(response.current.temp)
+        $("#weather >#humidity").html(response.current.humidity)
+        $("#weather >#uvindex").html(response.current.uvi)
   
       }); 
     })})

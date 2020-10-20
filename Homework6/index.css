@@ -26,6 +26,6 @@
 .forecast{
     flex-basis: 20%;
   background-color: blue;  
-  margin: 20px;
+  margin-right: 20px;
   width: 150px;
 }
